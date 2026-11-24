@@ -6,9 +6,9 @@ pipeline {
     maven 'Maven3'
 }
 
-    triggers {
-        githubPush()
-    }
+   triggers {
+    pollSCM('* * * * *')
+}
 
     stages {
         stage('Checkout GitHub') {
