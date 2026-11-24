@@ -47,7 +47,7 @@ pipeline {
 
     post {
         failure {
-            mail to: 'amal.aouamri@esprit.com',
+            mail to: 'aouamriamal0000@gmail.com',
                  subject: "ECHEC du build : ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: """Le build a echoue.
 Job : ${env.JOB_NAME}
